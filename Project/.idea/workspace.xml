@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cae5331e-8e90-4c51-8056-8af920826654" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1kRhN2vwVNGnz5WyzXylrY7GhAP" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/example" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\_18SE\_学习\大三\自动化测试\Final大作业\实践\Test\src\main\java\org\example" />
+      <recent name="C:\_18SE\_学习\大三\自动化测试\Final大作业\实践\Test\src\main\java\org\example\aug" />
+      <recent name="C:\_18SE\_学习\大三\自动化测试\Final大作业\实践\Test\src\main\resources" />
+      <recent name="C:\_18SE\_学习\大三\自动化测试\Final大作业\实践\Test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.InitUtil">
+    <configuration name="InitUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.InitUtil" />
+      <module name="Test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="startClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="startClass" />
+      <module name="Test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InitUtil" />
+        <item itemvalue="Application.startClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cae5331e-8e90-4c51-8056-8af920826654" name="Default Changelist" comment="" />
+      <created>1605669267241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605669267241</updated>
+      <workItem from="1605669269832" duration="3039000" />
+      <workItem from="1605696381065" duration="17311000" />
+      <workItem from="1605779623338" duration="2457000" />
+      <workItem from="1605786263546" duration="638000" />
+      <workItem from="1605788348099" duration="5520000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="701" y="74" key="#Project_Structure" timestamp="1605671991482">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="701" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605671991482" />
+    <state x="740" y="218" key="FileChooserDialogImpl" timestamp="1605779670453">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605779670453" />
+    <state width="988" height="71" key="GridCell.Tab.0.bottom" timestamp="1605793655925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="812" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605671125340" />
+    <state width="988" height="71" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605793655925" />
+    <state width="988" height="71" key="GridCell.Tab.0.center" timestamp="1605793655924">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="812" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605671125339" />
+    <state width="988" height="71" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605793655924" />
+    <state width="988" height="71" key="GridCell.Tab.0.left" timestamp="1605793655924">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="812" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605671125339" />
+    <state width="988" height="71" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605793655924" />
+    <state width="988" height="71" key="GridCell.Tab.0.right" timestamp="1605793655925">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="812" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605671125340" />
+    <state width="988" height="71" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605793655925" />
+    <state x="600" y="217" key="NewModule_or_Project.wizard" timestamp="1605699234109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="600" y="217" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605699234109" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1605792289672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605792289672" />
+    <state x="1010" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1605788525708">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1010" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605788525707" />
+    <state x="856" y="91" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605679537142">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="856" y="91" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1605679537142" />
+    <state x="334" y="215" key="new project wizard" timestamp="1605779672008">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605779672008" />
+    <state x="1018" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1605792536385">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605669932632" />
+    <state x="1018" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605792536385" />
+  </component>
+</project>
