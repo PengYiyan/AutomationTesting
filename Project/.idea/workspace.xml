@@ -2,26 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cae5331e-8e90-4c51-8056-8af920826654" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auxClass/AuxClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auxClass/AuxEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auxClass/ClassEdge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/auxClass/MethodEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selection-class.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InitUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aug/AugEntry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aug/AugUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aug/ClassEdge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aug/MethodEdge.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/someClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/startClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StartClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/InitUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/aug/AugEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/aug/AugUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/aug/ClassEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/aug/MethodEdge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/someClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotFiles/class-CMD.dot" beforeDir="false" afterPath="$PROJECT_DIR$/dotFiles/class-CMD.dot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotFiles/class-MORETRIANGLE.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotFiles/class-MORETRIANGLE.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotFiles/method-MORETRIANGLE.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dotFiles/method-MORETRIANGLE.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StartClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StartClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auxClass/AuxClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auxClass/AuxClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auxClass/AuxEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auxClass/AuxEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auxClass/ClassEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/auxClass/MethodEdge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auxClass/AuxClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auxClass/AuxClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auxClass/ClassEdge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auxClass/ClassEdge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/auxClass/MethodEdge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/auxClass/MethodEdge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/startClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/startClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,12 +115,23 @@
       <workItem from="1605788348099" duration="5520000" />
       <workItem from="1605797667470" duration="10000" />
       <workItem from="1605797700876" duration="4000" />
-      <workItem from="1605798161763" duration="12251000" />
+      <workItem from="1605798161763" duration="19967000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Data update" />
@@ -165,34 +170,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605779670453" />
-    <state width="914" height="169" key="GridCell.Tab.0.bottom" timestamp="1605880113274">
+    <state width="905" height="134" key="GridCell.Tab.0.bottom" timestamp="1605893162013">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="812" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605671125340" />
-    <state width="914" height="169" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605880113274" />
-    <state width="914" height="169" key="GridCell.Tab.0.center" timestamp="1605880113274">
+    <state width="905" height="134" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605893162013" />
+    <state width="905" height="134" key="GridCell.Tab.0.center" timestamp="1605893162012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="812" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605671125339" />
-    <state width="914" height="169" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605880113274" />
-    <state width="914" height="169" key="GridCell.Tab.0.left" timestamp="1605880113274">
+    <state width="905" height="134" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605893162012" />
+    <state width="905" height="134" key="GridCell.Tab.0.left" timestamp="1605893162012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="812" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605671125339" />
-    <state width="914" height="169" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605880113274" />
-    <state width="914" height="169" key="GridCell.Tab.0.right" timestamp="1605880113274">
+    <state width="905" height="134" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605893162012" />
+    <state width="905" height="134" key="GridCell.Tab.0.right" timestamp="1605893162012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="812" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605671125340" />
-    <state width="914" height="169" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605880113274" />
+    <state width="905" height="134" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605893162012" />
     <state x="600" y="217" key="NewModule_or_Project.wizard" timestamp="1605699234109">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="600" y="217" key="NewModule_or_Project.wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605699234109" />
-    <state x="770" y="126" key="SettingsEditor" timestamp="1605798354605">
+    <state x="770" y="126" key="SettingsEditor" timestamp="1605886495915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="770" y="126" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605798354605" />
+    <state x="770" y="126" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605886495915" />
     <state x="1010" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1605788525708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -205,10 +210,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="215" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605779672008" />
-    <state x="1018" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1605805778159">
+    <state x="1018" y="183" width="840" height="856" key="search.everywhere.popup" timestamp="1605891359004">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605669932632" />
-    <state x="1018" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605805778159" />
+    <state x="1018" y="183" width="840" height="856" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605891359004" />
   </component>
 </project>

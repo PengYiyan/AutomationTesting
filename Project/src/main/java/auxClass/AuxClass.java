@@ -8,6 +8,7 @@ import com.ibm.wala.types.annotations.Annotation;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -54,10 +55,11 @@ public class AuxClass {
                     //记录类和方法的边
                     Iterator<CGNode> pred = cg.getPredNodes(node); //找前驱节点
                     while(pred.hasNext()){
-                        CGNode nd = pred.next();
-                        if(nd.getMethod() instanceof ShrikeBTMethod){
-                            ShrikeBTMethod methodEnd = (ShrikeBTMethod)nd.getMethod();
-                            if("Application".equals(method.getDeclaringClass().getClassLoader().toString())){
+                        CGNode nextNode = pred.next();
+                        if(nextNode.getMethod() instanceof ShrikeBTMethod){
+                            ShrikeBTMethod methodEnd = (ShrikeBTMethod)nextNode.getMethod();
+                            //这里不小心把methodEnd敲成method了，导致后续null的报错
+                            if("Application".equals(methodEnd.getDeclaringClass().getClassLoader().toString())){
                                 //记录类级的边
                                 boolean classEdgeExists = false;
                                 for(ClassEdge classEdge:classEdges){
@@ -107,6 +109,12 @@ public class AuxClass {
         this.changeInfo = stringBuffer.toString().split("\n");
     }
 
+    /**
+     * 输出被选择的测试方法
+     * @param type
+     * @throws IOException
+     */
+
     public void outputSelectedRes(String type) throws IOException{
         File selectedMethodFile = new File("./selection-" + type + ".txt");
         if(!selectedMethodFile.exists()){
@@ -126,7 +134,7 @@ public class AuxClass {
     /**
      * 判断一个方法是否属于测试方法
      * @param method
-     * @return
+     * @你
      */
     public boolean judgeTestMethod(ShrikeBTMethod method){
         //找到方法的注解，比较是否存在junit单元下的单元测试
@@ -175,11 +183,11 @@ public class AuxClass {
                     break;
                 }
             }
-            System.out.println(affectedClass);
-            System.out.println(affectedClass == null);
+            //System.out.println(affectedClass);
+            //System.out.println(affectedClass == null);
             assert affectedClass != null;
             for(ShrikeBTMethod method : affectedClass.methods){
-                if(judgeTestMethod(method) == true){
+                if(judgeTestMethod(method)){
                     if(selectedMethods.indexOf(method) == -1) //如果还未添加过该方法，添加
                         selectedMethods.add(method);
                 }
@@ -188,25 +196,63 @@ public class AuxClass {
         outputSelectedRes("class");
     }
 
-    /**
-     * 选取变更方法调用的属于测试类的所有方法
-     * @throws IOException
-     */
-    public void methodLevelSelect() throws IOException{
-        for (String info:changeInfo){
+    public void getClosure(ArrayList<String> changeInfoArray){
+        ArrayList<String> closure = new ArrayList<String>();
+        for(String info:changeInfoArray){
             String[] infos = info.split("\\s");
             assert infos.length == 2;
             for(MethodEdge methodEdge:methodEdges){
-                //匹配类名与方法签名
                 if(methodEdge.begin.getDeclaringClass().getName().toString().equals(infos[0]) && methodEdge.begin.getSignature().equals(infos[1])){
-                    if(judgeTestMethod(methodEdge.end)){
-                        if(selectedMethods.indexOf(methodEdge.end) == -1){
-                            selectedMethods.add(methodEdge.end);
+                    if(selectedMethods.indexOf(methodEdge.end) == -1){
+                        selectedMethods.add(methodEdge.end);
+                        String methodString = methodEdge.end.getDeclaringClass().getName().toString() + " " + methodEdge.end.getSignature();
+                        if(changeInfoArray.indexOf(methodString)==-1){
+                            closure.add(methodString);
                         }
                     }
                 }
             }
         }
+        //如果没有新增方法，说明闭包生成已经结束
+        if(closure.size() == 0){
+
+        }else {//否则将已经有的闭包加入变更信息中，继续递归
+            changeInfoArray.addAll(closure);
+            getClosure(changeInfoArray);
+        }
+    }
+
+    /**
+     * 选取变更方法调用的属于测试类的所有方法
+     * @throws IOException
+     */
+    public void methodLevelSelect() throws IOException{
+        //考虑到方法中的依赖传递问题
+        ArrayList<String> changeInfoArray = new ArrayList<String>(Arrays.asList(changeInfo));
+        getClosure(changeInfoArray);
+
+//        for (String info:changeInfo){
+//            String[] infos = info.split("\\s");
+//            assert infos.length == 2;
+//            for(MethodEdge methodEdge:methodEdges){
+//                if(methodEdge.begin.getDeclaringClass().getName().toString().equals(infos[0]) && methodEdge.begin.getSignature().equals(infos[1])){
+//                    if(judgeTestMethod(methodEdge.end)){
+//                        if(selectedMethods.indexOf(methodEdge.end) == -1){
+//                            selectedMethods.add(methodEdge.end);
+//                        }
+//                    }
+//                }
+//            }
+//        }
+        //更新测试方法
+        ArrayList<ShrikeBTMethod> tempMethods = new ArrayList<ShrikeBTMethod>();
+        for(ShrikeBTMethod method:selectedMethods){
+            if(judgeTestMethod(method)){
+                tempMethods.add(method);
+            }
+        }
+        selectedMethods = tempMethods;
+
         outputSelectedRes("method");
     }
 
@@ -256,6 +302,7 @@ public class AuxClass {
         this.classRecord = new ArrayList<AuxEntry>();
         this.selectedMethods = new ArrayList<ShrikeBTMethod>();
         getDAG();
+        //输出.dot文件，要根据具体使用情况修改参数
         outputDotFile();
         parseChangeInfo();
     }

@@ -27,3 +27,27 @@ public class AuxEntry {
         }
     }
 }
+
+/**
+ * 记录类的边
+ */
+class ClassEdge {
+    public IClass begin,end;
+
+    public ClassEdge(IClass begin,IClass end){
+        this.begin = begin;
+        this.end = end;
+    }
+}
+
+/**
+ * 记录方法的边
+ */
+class MethodEdge {
+    public ShrikeBTMethod begin,end;
+
+    public MethodEdge(ShrikeBTMethod begin,ShrikeBTMethod end){
+        this.begin = begin;
+        this.end = end;
+    }
+}

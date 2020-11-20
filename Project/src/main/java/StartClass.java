@@ -59,6 +59,8 @@ public class StartClass {
                     }
                 }
             }
+        }else {
+            System.out.println("Can't find the file");
         }
     }
 
@@ -100,7 +102,6 @@ public class StartClass {
 
     public static void main(String args[]) throws IOException, InvalidClassFileException, ClassHierarchyException, CancelException {
 
-
         //生成分析域对象scope
         loadClass();
         //处理输入的参数args
@@ -115,12 +116,10 @@ public class StartClass {
         initGraph();
         //System.out.println(scope);
         //System.out.println(cg);
-
         if(selectType == 0){//类级别
             new AuxClass(cg,change_info).classLevelSelect();
         }else if(selectType == 1){//方法级别
             new AuxClass(cg,change_info).methodLevelSelect();
         }
-
     }
 }
