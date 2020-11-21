@@ -303,7 +303,7 @@ public class AuxClass {
         this.selectedMethods = new ArrayList<ShrikeBTMethod>();
         getDAG();
         //输出.dot文件，要根据具体使用情况修改参数
-        outputDotFile();
+        //outputDotFile();
         parseChangeInfo();
     }
 }
