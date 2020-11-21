@@ -107,8 +107,8 @@ public class StartClass {
         //处理输入的参数args
         if(args.length == 0){//用于调试的情况，选择一个数据进行测试
             String[] temps = new String[]{"-c",
-                    "C:\\_18SE\\_学习\\大三\\自动化测试\\Final大作业\\实践\\Test\\ClassicAutomatedTesting\\2-DataLog\\target",
-                    "C:\\_18SE\\_学习\\大三\\自动化测试\\Final大作业\\实践\\Test\\ClassicAutomatedTesting\\2-DataLog\\data\\change_info.txt"};
+                    "C:\\_18SE\\_学习\\大三\\自动化测试\\Final大作业\\实践\\_Git提交部分\\AutomationTesting\\Project\\ClassicAutomatedTesting\\1-ALU\\target",
+                    "C:\\_18SE\\_学习\\大三\\自动化测试\\Final大作业\\实践\\_Git提交部分\\AutomationTesting\\Project\\ClassicAutomatedTesting\\1-ALU\\data\\change_info.txt"};
             parseArg(temps);
         }else
             parseArg(args);

@@ -257,9 +257,9 @@ public class AuxClass {
     }
 
     public void outputDotFile() throws IOException{
-        String dotName = "CMD";
-        String dotClassBegin = "digraph" + dotName + "_class {\n";
-        String dotMethodBegin = "digraph" + dotName + "_method {\n";
+        String dotName = "MoreTriangle";
+        String dotClassBegin = "digraph" + " " + dotName + "_class {\n";
+        String dotMethodBegin = "digraph" + " " + dotName + "_method {\n";
         String dotClassContent = "";
         String dotMethodContent = "";
         String dotEnd = "}";
@@ -285,7 +285,7 @@ public class AuxClass {
             dotMethodContent += "\t\"" + methodEdge.begin.getSignature().toString() + "\" -> \"" +
                     methodEdge.end.getSignature().toString() + "\";\n";
         }
-        File dotMethodFile = new File("./dotFiles/class-" + dotName.toUpperCase() + ".dot");
+        File dotMethodFile = new File("./dotFiles/method-" + dotName.toUpperCase() + ".dot");
         if(!dotMethodFile.exists()){
             dotMethodFile.createNewFile();
         }

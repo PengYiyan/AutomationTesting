@@ -1,4 +1,4 @@
-digraphCMD_method {
+digraph DataLog_method {
 	"net.mooctest.Argument.variable(Lnet/mooctest/Variable;)Lnet/mooctest/Argument;" -> "net.mooctest.DatalogTest1.testDatalog2()V";
 	"net.mooctest.Fact.getPredicate()Lnet/mooctest/Predicate;" -> "net.mooctest.Datalog.substituteTo(Lnet/mooctest/Fact;)Lnet/mooctest/Substitution;";
 	"net.mooctest.Fact.getPredicate()Lnet/mooctest/Predicate;" -> "net.mooctest.Program.canDerive(Lnet/mooctest/Fact;[Lnet/mooctest/Fact;)Z";
